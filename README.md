@@ -142,7 +142,7 @@ After you are done, send us the hosted URL, and a link to the repository. Niall 
 
 We will then go through the code with you.
 
-If you have any questions, or are blocked in any way, reach out to either Owen (owen@ffern.co) or Niall (niall@ffern.co).
+If you have any questions, or are blocked in any way, reach out to Niall (niall@ffern.co).
 
 
 
