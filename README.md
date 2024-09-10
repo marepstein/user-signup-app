@@ -35,7 +35,7 @@ You are building the page that Ffern Friends link directs to.
 - Gracefully handle states relating to data fetching and form submission.
 - Only use features supported by iOS 15.4 and above.  
 - Think about the structure of links sent to Ffern friends.  
-— Use appropriate rendering strategies for optimal performance.
+- Use appropriate rendering strategies for optimal performance.
 - Host the site on Vercel.
 
 ### API
