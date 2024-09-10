@@ -138,7 +138,7 @@ Be warned! The developers who implemented the endpoint were a shady lot. It is a
 
 Don't worry if you don't get through everything. And have fun! This is an opportunity to show off your frontend skills. We want a flavor of what you can do.
 
-After you are done, send us the hosted URL, and a link to the repository. Niall and Owen need access (niallpaterson & beadlespouse on github.)
+After you are done, send us the hosted URL, and a link to the repository. Also include a link that would be sent to a Ffern friend. Niall needs access (niallpaterson on github.)
 
 We will then go through the code with you.
 
