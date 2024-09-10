@@ -1,4 +1,4 @@
-# Frontend Technical Test
+# Senior Frontend Technical Test
 
 The purpose of this technical test is to assess your ability as a frontend developer. 
 
@@ -26,13 +26,16 @@ You are building the page that Ffern Friends link directs to.
 
 ### Technical Requirements
 
-- Fork this respository and create a fresh project using either Gatsby or Next. 
+- Fork this respository and create a fresh project using Next.js.
+- The pages router is preferred, since that is what we use at Ffern. 
 - The repository must be statically typed using Typescript.
 - Use Zod to type any data structures that cannot be statically typed.
 - Use React Query for data fetching and requests.
 - Use tailwind to style React components.
 - Gracefully handle states relating to data fetching and form submission.
 - Only use features supported by iOS 15.4 and above.
+- Think about the structure of links sent to Ffern friends.
+— Use appropriate rendering strategies for optimal performance.
 - Host the site on Vercel.
 
 ### API
