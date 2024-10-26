@@ -1,7 +1,7 @@
 import { ProgressLoader } from '@/components/atoms/Loaders/Progress';
 import { useLoadingProgress } from '@/components/atoms/Loaders/Progress/hooks/useLoadingProgress';
 import { Error } from '@/components/molecules/Error/Error';
-import { PeronalisedSignup } from '@/ffern-friends/modules/PersonalisedSignup';
+import { PersonalisedSignup } from '@/ffern-friends/modules/PersonalisedSignup';
 import { FfernFriendIdProvider } from '@/ffern-friends/provider/FfernFriendIdProvider';
 import { fetchFfernFriend } from '@/ffern-friends/services/frontend/getFernFriend';
 import { IService } from '@/types';
@@ -42,7 +42,7 @@ export default function Page({ ffernFriendId }: PageProps) {
 
   return (
     <FfernFriendIdProvider ffernFriendId={ffernFriendId}>
-      {isReady ? <PeronalisedSignup ffernFriend={data} /> : null}
+      {isReady ? <PersonalisedSignup ffernFriend={data} /> : null}
     </FfernFriendIdProvider>
   );
 }

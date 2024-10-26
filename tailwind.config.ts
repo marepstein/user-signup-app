@@ -6,7 +6,7 @@ const config: Config = {
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/ffern-friends/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/features/ffern-friends/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
     screens: {
@@ -48,7 +48,7 @@ const config: Config = {
         'custom-light': '2px 2px 4px 0px rgba(3, 3, 2, 0.15)',
       },
       fontFamily: {
-        alegreya: ['Alegreya', 'sans'],
+        raleway: ['Raleway', 'sans-serif'],
       },
     },
     plugins: [

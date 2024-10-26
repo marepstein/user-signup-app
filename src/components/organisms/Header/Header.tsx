@@ -13,7 +13,7 @@ export const Header: FC<HeaderProps> = ({ title, imageUrl }) => {
         src={imageUrl}
         alt="Header Background"
         className="z-0"
-        width="1280"
+        width="1820"
         height="720"
       />
       <div className="absolute inset-0 flex flex-col p-5 text-white z-10 bg-black bg-opacity-40">

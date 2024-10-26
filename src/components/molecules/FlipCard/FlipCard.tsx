@@ -8,6 +8,8 @@ interface IFlipCardProps {
 }
 
 export const FlipCard: FC<IFlipCardProps> = ({ front, back, isFlipped }) => {
+  console.log('isFlipped', isFlipped);
+
   return (
     <div
       className="w-full h-full"

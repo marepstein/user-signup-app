@@ -21,8 +21,11 @@
       "@/lib/*": ["./src/lib/*"],
       "@/types/*": ["./src/types/*"],
       "@/test/*": ["./src/test/*"],
-      "@/ffern-friends/modules/*": ["./src/ffern-friends/modules/*"],
-      "@/ffern-friends/services/*": ["./src/ffern-friends/services/*"]
+      "@/features/*": ["./src/features/*"],
+      "@/ffern-friends/modules/*": ["./src/features/ffern-friends/modules/*"],
+      "@/ffern-friends/services/*": ["./src/features/ffern-friends/services/*"],
+      "@/ffern-friends/provider/*": ["./src/features/ffern-friends/provider/*"],
+      "@/ffern-friends/hooks/*": ["./src/features/ffern-friends/hooks/*"]
     }
   },
   "include": [

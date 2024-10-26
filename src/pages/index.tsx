@@ -1,14 +1,3 @@
-// const geistSans = localFont({
-//   src: '../../public/fonts/GeistSans.woff',
-//   variable: '--font-geist-sans',
-//   weight: '100 900',
-// });
-// const geistMono = localFont({
-//   src: '../../public/fonts/GeistMonoVF.woff',
-//   variable: '--font-geist-mono',
-//   weight: '100 900',
-// });
-
 export default function Home() {
   return (
     <div

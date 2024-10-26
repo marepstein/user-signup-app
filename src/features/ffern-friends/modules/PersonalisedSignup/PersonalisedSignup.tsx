@@ -1,6 +1,6 @@
 import { Video } from '@/components/atoms/Video';
 import { Form } from '@/components/organisms/Form/Form';
-import { VIDEO_URL } from '@/ffern-friends/constants';
+import { VIDEO_URL } from '@/features/ffern-friends/constants';
 import { useFfernFriendId } from '@/ffern-friends/hooks/useFfernFriendId';
 import { updateFfernFriendService } from '@/ffern-friends/services/api';
 import { IService } from '@/types';
