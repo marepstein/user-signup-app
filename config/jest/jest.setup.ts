@@ -5,8 +5,4 @@ process.env = {
   NEXT_PUBLIC_API_PASSWORD: 'fake-password',
 };
 
-jest.mock('@/ffern-friends/services/frontend/updateFfernFriend', () => ({
-  updateFfernFriend: jest.fn(),
-}));
-
 export {};

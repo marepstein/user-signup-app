@@ -26,7 +26,6 @@ export const Input: FC<IInputProps> = ({
           className
         )}
       />
-      {/* {error && <span className="error-message">{error.message}</span>} */}
     </div>
   );
 };

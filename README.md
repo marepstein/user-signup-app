@@ -180,3 +180,5 @@ describe('<PeronalisedSignup />', () => {
   });
 });
 ```
+
+2. API tests previously worked, however started to fail with moduleNameMapper error.

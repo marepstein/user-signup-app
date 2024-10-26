@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
-import { PiLockLight } from 'react-icons/pi';
+import { TfiLock } from 'react-icons/tfi';
 import { VscChevronRight } from 'react-icons/vsc';
 
 import { TFormData } from './types';
@@ -112,7 +112,7 @@ export const Form: FC<TFormProps> = ({ onSubmit, isPending }) => {
         disabled={!isValid}
         rightSection={
           !isValid ? (
-            <PiLockLight className="text-ash600" />
+            <TfiLock className="text-ash600" />
           ) : (
             <VscChevronRight className="text-ash50" />
           )
