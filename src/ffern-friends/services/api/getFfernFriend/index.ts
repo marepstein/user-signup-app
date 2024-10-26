@@ -1,0 +1,1 @@
+export { getFfernFriendService } from './getFfernFriend';

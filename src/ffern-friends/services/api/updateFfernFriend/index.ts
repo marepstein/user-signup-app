@@ -1,0 +1,1 @@
+export { updateFfernFriendService } from './updateFfernFriend';
