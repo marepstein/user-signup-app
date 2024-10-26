@@ -22,8 +22,6 @@ export const Button: FC<PropsWithChildren<IButtonProps>> = ({
   loading,
   ...rest
 }) => {
-  console.log(disabled);
-
   return (
     <button
       {...rest}

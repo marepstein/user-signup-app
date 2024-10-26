@@ -22,10 +22,11 @@ export const Select: FC<ISelectProps> = ({
 
   return (
     <select
+      {...register(name)}
       value={selectedValue}
       onChange={(e) => {
         setSelectedValue(e.target.value);
-        register(name, { value: e.target.value });
+        register(name, { value: selectedValue });
       }}
       className={classNames(
         'w-full py-2 px-[10px] min-h-[50px] bg-ash50 border border-ash100',

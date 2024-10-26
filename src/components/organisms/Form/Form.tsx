@@ -25,6 +25,9 @@ export const Form: FC<TFormProps> = ({ onSubmit, isPending }) => {
     mode: 'all',
   });
 
+  console.log('Errors:', errors);
+  console.log('Is Valid:', isValid);
+
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
