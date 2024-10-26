@@ -5,12 +5,17 @@ import { PersonalisedSignup } from '@/ffern-friends/modules/PersonalisedSignup';
 import { FfernFriendIdProvider } from '@/ffern-friends/provider/FfernFriendIdProvider';
 import { fetchFfernFriend } from '@/ffern-friends/services/frontend/getFernFriend';
 import { IService } from '@/types';
-import { dehydrate, QueryClient, useQuery } from '@tanstack/react-query';
+import {
+  dehydrate,
+  QueryClient,
+  useQuery,
+  DehydratedState,
+} from '@tanstack/react-query';
 import { GetServerSideProps } from 'next';
 
 interface PageProps {
   ffernFriendId: string;
-  dehydratedState: unknown;
+  dehydratedState: DehydratedState;
 }
 
 export default function Page({ ffernFriendId }: PageProps) {
@@ -19,7 +24,8 @@ export default function Page({ ffernFriendId }: PageProps) {
       queryKey: ['ffern-friend', ffernFriendId],
       queryFn: () => fetchFfernFriend(ffernFriendId),
       enabled: !!ffernFriendId,
-      retry: 3,
+      retry: 1,
+      staleTime: 1000 * 60 * 10,
     }
   );
 
@@ -67,7 +73,7 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
     await queryClient.fetchQuery({
       queryKey: ['ffern-friend', ffernFriendId],
       queryFn: () => fetchFfernFriend(ffernFriendId),
-      retry: 3,
+      retry: 1,
     });
 
     return {

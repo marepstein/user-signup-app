@@ -25,9 +25,6 @@ export const Form: FC<TFormProps> = ({ onSubmit, isPending }) => {
     mode: 'all',
   });
 
-  console.log('Errors:', errors);
-  console.log('Is Valid:', isValid);
-
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
@@ -104,7 +101,6 @@ export const Form: FC<TFormProps> = ({ onSubmit, isPending }) => {
               { value: 'US', label: 'United States' },
               { value: 'NL', label: 'Netherlands' },
             ]}
-            label="Country"
             value="GB"
             className="rounded"
           />

@@ -6,7 +6,6 @@ export interface ISelectProps
   extends Pick<TFormFieldProps, 'error' | 'register' | 'name'> {
   options: { label: string; value: string }[];
   value: string;
-  label: string;
   className?: Argument;
 }
 
@@ -15,7 +14,6 @@ export const Select: FC<ISelectProps> = ({
   value,
   name,
   register,
-  label,
   className,
 }) => {
   const [selectedValue, setSelectedValue] = useState(value);
@@ -33,7 +31,6 @@ export const Select: FC<ISelectProps> = ({
         className
       )}
     >
-      {label && <label className="sm:text-xs md:text-md">{label}</label>}
       {options.map(({ value, label }) => (
         <option key={value} value={value}>
           {label}
