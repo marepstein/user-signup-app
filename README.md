@@ -211,7 +211,3 @@ Having looked at a lightning report, I'm aware that the video maybe causing perf
 # Loading Spinners
 
 Add loading spinners on the overall app! Hoped to use React Suspense - would try implement this for better user experience and performance.
-
-# Bugs on iphone
-
-Noticed some bugs on different devices e.g. background black and text blurred out on some devices but not others - would look into this!
