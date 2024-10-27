@@ -206,7 +206,7 @@ With more time, I would have liked to improve how the errors are handled in term
 
 # Performance
 
-Having looked at a lightning report, I'm aware that the video maybe causing performance issues, and potentially some other CLS issues (which could be solved with things like loading skeletons). With more time I would have liked to implement these, as well as lazy loading for the video. Also, seems to be a bit of a bug on IOS with the video opening when scrolling to the top - would fix this!
+Having looked at a lightning report, I'm aware that the video maybe causing performance issues, and potentially some other CLS issues (which could be solved with things like loading skeletons). With more time I would have liked to implement these, as well as lazy loading for the video.
 
 # Loading Spinners
 
