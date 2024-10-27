@@ -198,7 +198,7 @@ describe('<PeronalisedSignup />', () => {
 
 # Further modularisation
 
-Would like to extract things out in some of the components and tidy them up in places e.g. SignupContent - would ideally be from db or CMS etc
+Would like to extract things out in some of the components and tidy them up in places e.g. SignupContent - would ideally be from db or CMS, create a reusable image component using next/image etc
 
 # Error handling
 
@@ -211,3 +211,7 @@ Having looked at a lightning report, I'm aware that the video maybe causing perf
 # Loading Spinners
 
 Add loading spinners on the overall app! Hoped to use React Suspense - would try implement this for better user experience and performance.
+
+# Bugs on iphone
+
+Noticed some bugs on different devices e.g. background black and text blurred out on some devices but not others - would look into this!
