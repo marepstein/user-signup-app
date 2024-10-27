@@ -6,7 +6,7 @@ interface ISignupContentProps {
 
 export const SignupContent: FC<ISignupContentProps> = ({ firstName }) => {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col text-ash900">
       <p>Dear {firstName ?? `user`},</p>
       <br />
       <p>
