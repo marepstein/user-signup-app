@@ -33,7 +33,7 @@ export default function Page({ ffernFriendId }: PageProps) {
 
   if (isLoading) {
     return (
-      <div className="flex flex-col items-center justify-center">
+      <div className="flex flex-col items-center justify-center text-ash900">
         <h1>Loading...</h1>
         <ProgressLoader progress={loadingProgress} />
       </div>
