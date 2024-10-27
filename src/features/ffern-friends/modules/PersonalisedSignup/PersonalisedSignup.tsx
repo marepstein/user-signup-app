@@ -58,11 +58,12 @@ export const PersonalisedSignup: FC<IPeronalisedSignupProps> = ({
         autoPlay={true}
         muted={true}
         loop={true}
+        controlsList="nofullscreen"
+        controls={false}
+        playsInline={true}
         mimeType="video/mp4"
         width="150"
         height="150"
-        controlsList="nofullscreen"
-        playsInline={true}
       />
 
       <div className="flex flex-col gap-4 lg:hidden">
