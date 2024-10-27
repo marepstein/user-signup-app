@@ -1,5 +1,5 @@
-import FfernClient from '@/ffern-friends/services/axiosInstance';
-import { UpdateFfernFriendSchema } from '@/ffern-friends/services/schema/UpdateFfernFriendSchema';
+import FfernClient from '@/features/ffern-friends/services/axiosInstance';
+import { UpdateFfernFriendSchema } from '@/features/ffern-friends/services/schema/UpdateFfernFriendSchema';
 import { IService } from '@/types';
 import { z } from 'zod';
 

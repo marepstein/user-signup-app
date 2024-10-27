@@ -1,4 +1,4 @@
-import FfernClient from '@/ffern-friends/services/axiosInstance';
+import FfernClient from '@/features/ffern-friends/services/axiosInstance';
 import {
   mockFfernFriendUpdateRequest,
   mockInvalidFfernFriend,
@@ -6,7 +6,7 @@ import {
 import { z } from 'zod';
 import { updateFfernFriendService } from './updateFfernFriend';
 
-jest.mock('@/ffern-friends/services/axiosInstance');
+jest.mock('@/features/ffern-friends/services/axiosInstance');
 
 const mockedFfernClient = FfernClient as jest.Mocked<typeof FfernClient>;
 

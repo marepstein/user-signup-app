@@ -1,8 +1,8 @@
 import { Video } from '@/components/atoms/Video';
 import { Form } from '@/components/organisms/Form/Form';
 import { VIDEO_URL } from '@/features/ffern-friends/constants';
-import { useFfernFriendId } from '@/ffern-friends/hooks/useFfernFriendId';
-import { updateFfernFriendService } from '@/ffern-friends/services/api';
+import { useFfernFriendId } from '@/features/ffern-friends/hooks/useFfernFriendId';
+import { updateFfernFriendService } from '@/features/ffern-friends/services/api';
 import { IService } from '@/types';
 import { useMutation, useQueryClient } from '@tanstack/react-query';
 import { FC, useState } from 'react';
@@ -52,14 +52,17 @@ export const PersonalisedSignup: FC<IPeronalisedSignupProps> = ({
   return (
     <div className="relative flex flex-col items-center gap-5 bg-sand75 rounded p-5 shadow-custom-light mt-[-95px] lg:mt-0 z-50 top-5 lg:top-0">
       <Video
-        url={VIDEO_URL}
         className="h-40 w-40 rounded-[80%] aspect-video"
+        url={VIDEO_URL}
+        poster="/images/fallback.png"
         autoPlay={true}
         muted={true}
         loop={true}
         mimeType="video/mp4"
         width="150"
         height="150"
+        controlsList="nofullscreen"
+        playsInline={true}
       />
 
       <div className="flex flex-col gap-4 lg:hidden">

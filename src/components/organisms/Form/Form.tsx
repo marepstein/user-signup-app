@@ -6,7 +6,7 @@ import { VscChevronRight } from 'react-icons/vsc';
 
 import { TFormData } from './types';
 import { Input } from '@/components/atoms/Input';
-import { UpdateFfernFriendSchema } from '@/ffern-friends/services/schema/UpdateFfernFriendSchema';
+import { UpdateFfernFriendSchema } from '@/features/ffern-friends/services/schema/UpdateFfernFriendSchema';
 import { Button } from '@/components/molecules/Button';
 import { Select } from '@/components/atoms/Select';
 

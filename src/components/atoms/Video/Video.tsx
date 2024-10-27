@@ -1,7 +1,8 @@
 import classnames, { Argument } from 'classnames';
-import { FC } from 'react';
+import { FC, VideoHTMLAttributes } from 'react';
 
-export interface IVideoProps {
+export interface IVideoProps
+  extends Omit<VideoHTMLAttributes<HTMLVideoElement>, 'className'> {
   url: string;
   mimeType: string;
   loop?: boolean;
@@ -10,7 +11,6 @@ export interface IVideoProps {
   autoPlay?: boolean;
   showControls?: boolean;
   className?: Argument;
-  preload?: string;
   width?: string;
   height?: string;
 }
@@ -24,9 +24,9 @@ export const Video: FC<IVideoProps> = ({
   playsInline,
   autoPlay,
   showControls,
-  preload,
   width,
   height,
+  ...rest
 }) => {
   return (
     <video
@@ -35,10 +35,10 @@ export const Video: FC<IVideoProps> = ({
       muted={muted}
       playsInline={playsInline}
       autoPlay={autoPlay}
-      preload={preload}
       controls={showControls}
       width={width}
       height={height}
+      {...rest}
     >
       <source src={url} type={mimeType} />
     </video>

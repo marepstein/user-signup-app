@@ -15,12 +15,9 @@ const FfernClient = axios.create({
 FfernClient.interceptors.response.use(
   (response) => response,
   (error) => {
-    console.log('Response Error Message:', error.message);
-
+    console.error('Response Error Message:', error.message);
     return Promise.reject(error);
   }
 );
-
-// FUTURE IMPROVEMENT: link to logging service e.g. Datadog
 
 export default FfernClient;

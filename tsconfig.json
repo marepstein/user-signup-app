@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "baseUrl": "./",
     "target": "ES2017",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
@@ -22,10 +23,18 @@
       "@/types/*": ["./src/types/*"],
       "@/test/*": ["./src/test/*"],
       "@/features/*": ["./src/features/*"],
-      "@/ffern-friends/modules/*": ["./src/features/ffern-friends/modules/*"],
-      "@/ffern-friends/services/*": ["./src/features/ffern-friends/services/*"],
-      "@/ffern-friends/provider/*": ["./src/features/ffern-friends/provider/*"],
-      "@/ffern-friends/hooks/*": ["./src/features/ffern-friends/hooks/*"]
+      "@/features/ffern-friends/modules/*": [
+        "./src/features/ffern-friends/modules/*"
+      ],
+      "@/features/ffern-friends/services/*": [
+        "./src/features/ffern-friends/services/*"
+      ],
+      "@/features/ffern-friends/provider/*": [
+        "./src/features/ffern-friends/provider/*"
+      ],
+      "@/features/ffern-friends/hooks/*": [
+        "./src/features/ffern-friends/hooks/*"
+      ]
     }
   },
   "include": [

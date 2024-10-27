@@ -1,7 +1,7 @@
 import {
   getFfernFriendService,
   updateFfernFriendService,
-} from '@/ffern-friends/services/api';
+} from '@/features/ffern-friends/services/api';
 import { EHttpMethod, IService } from '@/types';
 import { NextApiRequest, NextApiResponse } from 'next';
 

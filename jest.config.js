@@ -22,22 +22,8 @@ module.exports = {
     '^.+\\.(jpg|gif|webp|png)$': '<rootDir>/config/jest/stubs/image.js',
   },
   modulePaths: ['<rootDir>'],
-  roots: ['<rootDir>/src'],
+  roots: ['<rootDir>'],
   moduleNameMapper: {
-    ...pathsToModuleNameMapper(compilerOptions.paths, { prefix: '<rootDir>/' }),
-    '^@/(.*)$': '<rootDir>/src/$1',
-    '^@/components/(.*)$': '<rootDir>/src/components/$1',
-    '^@/styles/(.*)$': '<rootDir>/src/styles/$1',
-    '^@/types/(.*)$': '<rootDir>/src/types/$1',
-    '^@/test/(.*)$': '<rootDir>/src/test/$1',
-    '^@/features/(.*)$': '<rootDir>/src/features/$1',
-    '^@/ffern-friends/modules/(.*)$':
-      '<rootDir>/src/features/ffern-friends/modules/$1',
-    '^@/ffern-friends/services/(.*)$':
-      '<rootDir>/src/features/ffern-friends/services/$1',
-    '^@/ffern-friends/provider/(.*)$':
-      '<rootDir>/src/features/ffern-friends/provider/$1',
-    '^@/ffern-friends/hooks/(.*)$':
-      '<rootDir>/src/features/ffern-friends/hooks/$1',
+    ...pathsToModuleNameMapper(compilerOptions.paths),
   },
 };

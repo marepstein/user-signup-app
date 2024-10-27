@@ -143,9 +143,24 @@ We will then go through the code with you.
 
 If you have any questions, or are blocked in any way, reach out to Niall (niall@ffern.co).
 
+### Developer Docs!
+
+## Features
+
+- Nextjs API for handling GET and POST requests to the 'db'
+- Frontend Services to handle requests
+- Error handling across three 'layers', with an Axios instance interceptor. Added for concise debugging.
+- React Context to store FfernFriendId (maybe overkill but made this with the idea that the app could be future developed!)
+- Tanstack Query for requests
+- Zod for validation
+- Flip card animation for desktop users - for a little extra spice!
+- Server-side rendering - opted for server side rendering to boost performance and make sure user data was always up to date for accurate POST and GET
+
 ## Future Improvements
 
-1. Testing on Frontend Page and Component levels i.e. test every design component and frontend services
+# Tests
+
+Unfortunatley had some issues with jest and ModuleNameMapper (was previously working), which I ran out of time to fix. I have kept tests in files using .test.skip.ts for API services, and have the below for an example frontend implementation. With more time I would add tests at every level i.e component level, to modules, to page.
 
 Signup page snapshot test:
 
@@ -181,4 +196,18 @@ describe('<PeronalisedSignup />', () => {
 });
 ```
 
-2. API tests previously worked, however started to fail with moduleNameMapper error.
+# Further modularisation
+
+Would like to extract things out in some of the components and tidy them up in places e.g. SignupContent - would ideally be from db or CMS etc
+
+# Error handling
+
+With more time, I would have liked to improve how the errors are handled in terms of how they look, and add more custom error routes. Additionally, were this to be in production, add error logging e.g. using Datadog
+
+# Performance
+
+Having looked at a lightning report, I'm aware that the video maybe causing performance issues, and potentially some other CLS issues (which could be solved with things like loading skeletons). With more time I would have liked to implement these, as well as lazy loading for the video. Also, seems to be a bit of a bug on IOS with the video opening when scrolling to the top - would fix this!
+
+# Loading Spinners
+
+Add loading spinners on the overall app! Hoped to use React Suspense - would try implement this for better user experience and performance.

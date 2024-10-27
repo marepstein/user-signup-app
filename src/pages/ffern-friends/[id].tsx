@@ -1,9 +1,9 @@
 import { ProgressLoader } from '@/components/atoms/Loaders/Progress';
 import { useLoadingProgress } from '@/components/atoms/Loaders/Progress/hooks/useLoadingProgress';
 import { Error } from '@/components/molecules/Error/Error';
-import { PersonalisedSignup } from '@/ffern-friends/modules/PersonalisedSignup';
-import { FfernFriendIdProvider } from '@/ffern-friends/provider/FfernFriendIdProvider';
-import { fetchFfernFriend } from '@/ffern-friends/services/frontend/getFernFriend';
+import { PersonalisedSignup } from '@/features/ffern-friends/modules/PersonalisedSignup';
+import { FfernFriendIdProvider } from '@/features/ffern-friends/provider/FfernFriendIdProvider';
+import { fetchFfernFriend } from '@/features/ffern-friends/services/frontend/getFernFriend';
 import { IService } from '@/types';
 import {
   dehydrate,

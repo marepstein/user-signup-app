@@ -1,4 +1,4 @@
-import FfernClient from '@/ffern-friends/services/axiosInstance';
+import FfernClient from '@/features/ffern-friends/services/axiosInstance';
 import { IService } from '@/types';
 import axios from 'axios';
 

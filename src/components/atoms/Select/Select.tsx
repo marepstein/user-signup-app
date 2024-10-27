@@ -27,7 +27,7 @@ export const Select: FC<ISelectProps> = ({
         register(name, { value: selectedValue });
       }}
       className={classNames(
-        'w-full py-2 px-[10px] min-h-[50px] bg-ash50 border border-ash100',
+        'w-full py-2 px-[10px] min-h-[50px] bg-ash50 border border-ash100 appearance-none rounded',
         className
       )}
     >
