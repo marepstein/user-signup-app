@@ -143,7 +143,7 @@ We will then go through the code with you.
 
 If you have any questions, or are blocked in any way, reach out to Niall (niall@ffern.co).
 
-### Developer Docs!
+# Developer Docs!
 
 ## Features
 
@@ -158,7 +158,7 @@ If you have any questions, or are blocked in any way, reach out to Niall (niall@
 
 ## Future Improvements
 
-# Tests
+### Tests
 
 Unfortunatley had some issues with jest and ModuleNameMapper (was previously working), which I ran out of time to fix. I have kept tests in files using .test.skip.ts for API services, and have the below for an example frontend implementation. With more time I would add tests at every level i.e component level, to modules, to page.
 
@@ -196,18 +196,22 @@ describe('<PeronalisedSignup />', () => {
 });
 ```
 
-# Further modularisation
+### Further modularisation
 
 Would like to extract things out in some of the components and tidy them up in places e.g. SignupContent - would ideally be from db or CMS, create a reusable image component using next/image etc
 
-# Error handling
+### Error handling
 
 With more time, I would have liked to improve how the errors are handled in terms of how they look, and add more custom error routes. Additionally, were this to be in production, add error logging e.g. using Datadog
 
-# Performance
+### Performance
 
 Having looked at a lightning report, I'm aware that the video maybe causing performance issues, and potentially some other CLS issues (which could be solved with things like loading skeletons). With more time I would have liked to implement these, as well as lazy loading for the video.
 
-# Loading Spinners
+### Loading Spinners
 
 Add loading spinners on the overall app! Hoped to use React Suspense - would try implement this for better user experience and performance.
+
+### URL security considerations
+
+Would like to potentially add more checks around the authenticated user - would add more error handling around this and potentially look into the URL/way this all works.
